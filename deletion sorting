@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{ 
+   int n,i,pos,key,a[50];
+   printf("enter the no of elements:");
+   scanf("%d",&n);
+   printf("enter the elements:");
+   for(i=0;i<n;i++)
+   scanf("%d",&a[i]);
+   printf("enter the position where you want to delete the element:");
+   scanf("%d",&pos);
+   for(i=pos;i<n;i++)
+     a[i]=a[i+1];
+     for(i=0;i<n;i++)
+     printf("%d\t",a[i]);
+}
