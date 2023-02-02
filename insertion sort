@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{ 
+   int n,i,pos,key,a[50];
+   printf("enter the no of elements:");
+   scanf("%d",&n);
+   printf("enter the elements:");
+   for(i=0;i<n;i++)
+   scanf("%d",&a[i]);
+   printf("enter the position where you want to insert the element:");
+   scanf("%d",&pos);
+   printf("enter the key:");
+   scanf("%d",&key);
+   for(i=n-1;i>=pos;i--)
+       a[i]=a[i-1];
+       a[pos]=key;
+     for(i=0;i<n;i++)
+     printf("%d\t",a[i]);
+}
